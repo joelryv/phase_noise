@@ -24,7 +24,7 @@ def read_csv(file_path: str, voltage_column: int = 1) -> dict:
     return nodes
 
 
-def read_tr0(file_path: str):
+def read_trN(file_path: str):
     with open(file_path, "rb") as f:
         endianness = '<'
         preamble = f.read(16)
